@@ -1,10 +1,10 @@
-export default function Usuario(params) {
+export default function Usuario({ src, nome, apelido }) {
   return (
     <div class="usuario">
-      <img src="assets/img/catanacomics.svg" />
+      <img src={src} />
       <div class="texto">
-        <strong>catanacomics</strong>
-        Catana
+        <strong>{nome}</strong>
+        {apelido}
       </div>
     </div>
   );
